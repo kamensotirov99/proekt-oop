@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<!-- 
+2. This file defines classes you wish to persist. How these classes are 
+mapped to database tables. Database driver, location, userid and pw
+ -->
+ 
+<persistence version="2.0"
+    xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    
+    <!-- Define a name used to get an entity manager. Define that you will 
+    complete transactions with the DB  -->
+    <persistence-unit name="persistenceUnit" transaction-type="RESOURCE_LOCAL">
+    
+        <!-- Define the class for Hibernate which implements JPA -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- Define the object that should be persisted in the database -->
+        <class>projectoop2.classes.Distributors</class>
+        <class>projectoop2.classes.Events</class>
+        <class>projectoop2.classes.Organizers</class>
+        <class>projectoop2.classes.EvType</class>
+        <class>projectoop2.classes.Transactions</class>
+           <properties>
+            <!-- Driver for DB database -->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+            <!-- URL for DB -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ticketcenter" />
+            <!-- Username -->
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <!-- Password -->
+            <property name="javax.persistence.jdbc.password" value="Parolazasteam99" />
+            
+            <property name="show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
