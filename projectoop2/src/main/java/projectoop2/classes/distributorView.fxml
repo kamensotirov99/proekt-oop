@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f7e6ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectoop2.classes.disViewController">
+   <children>
+      <Label fx:id="welcomeLabel" layoutX="31.0" layoutY="29.0" prefHeight="18.0" prefWidth="142.0" text="Welcome" />
+      <JFXListView layoutX="386.0" layoutY="32.0" prefHeight="368.0" prefWidth="200.0" style="-fx-background-color: #e7b3ff;" />
+      <Label layoutX="458.0" layoutY="14.0" text="My Events" />
+      <JFXButton layoutX="31.0" layoutY="144.0" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d580ff;" text="Add Event" />
+      <JFXButton layoutX="32.0" layoutY="216.0" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d580ff;" text="My Profile" />
+      <JFXButton layoutX="31.0" layoutY="289.0" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d580ff;" text="Log out" />
+   </children>
+</AnchorPane>

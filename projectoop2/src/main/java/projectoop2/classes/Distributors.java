@@ -29,7 +29,7 @@ public class Distributors implements java.io.Serializable {
 	private String disEmail;
 	
 	@Column(name="dis_rating")
-	private Float disRating;
+	private Double disRating;
 	
 	@ManyToMany(cascade = { CascadeType.ALL })
     @JoinTable(
@@ -37,9 +37,9 @@ public class Distributors implements java.io.Serializable {
         joinColumns = { @JoinColumn(name = "dis_id") }, 
         inverseJoinColumns = { @JoinColumn(name = "ev_id") }
     )
-	private Set<Events> DisEvents = new HashSet<>();//eventite,svurzani s tozi distributor
+	private Set<Events> DisEvents = new HashSet<Events>();//eventite,svurzani s tozi distributor
 	
-	@OneToMany(mappedBy="distributors")
+	@OneToMany(mappedBy="distributors",cascade=CascadeType.ALL)
 	private Set<Transactions> transactionses = new HashSet<Transactions>();
 
 	public Distributors() {
@@ -57,7 +57,7 @@ public class Distributors implements java.io.Serializable {
 	}
 
 	public Distributors(int disId, String disUsername, String disPassword, String disFname, String disLname,
-			String disEmail, Float disRating, Set<Events> eventses, Set transactionses) {
+			String disEmail, Double disRating, Set<Events> eventses, Set<Transactions> transactionses) {
 		this.disId = disId;
 		this.disUsername = disUsername;
 		this.disPassword = disPassword;
@@ -117,11 +117,11 @@ public class Distributors implements java.io.Serializable {
 		this.disEmail = disEmail;
 	}
 
-	public Float getDisRating() {
+	public Double getDisRating() {
 		return this.disRating;
 	}
 
-	public void setDisRating(Float disRating) {
+	public void setDisRating(Double disRating) {
 		this.disRating = disRating;
 	}
 
@@ -133,11 +133,11 @@ public class Distributors implements java.io.Serializable {
 		this.DisEvents = eventses;
 	}
 
-	public Set getTransactionses() {
+	public Set<Transactions> getTransactionses() {
 		return this.transactionses;
 	}
 
-	public void setTransactionses(Set transactionses) {
+	public void setTransactionses(Set<Transactions> transactionses) {
 		this.transactionses = transactionses;
 	}
 

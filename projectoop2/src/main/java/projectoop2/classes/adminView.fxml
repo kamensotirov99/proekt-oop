@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="896.0" style="-fx-background-color: #ccb3ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectoop2.classes.Admin">
+   <children>
+      <JFXButton fx:id="createOrg" layoutX="37.0" layoutY="326.0" onAction="#createOrganizer" prefHeight="59.0" prefWidth="112.0" style="-fx-background-color: #9966ff;" text="Create Organizer" />
+      <JFXButton layoutX="179.0" layoutY="326.0" onAction="#createDistributor" prefHeight="59.0" prefWidth="112.0" style="-fx-background-color: #9966ff;" text="Create Distributor" />
+      <TableView fx:id="orgs" layoutY="47.0" prefHeight="206.0" prefWidth="448.0">
+        <columns>
+          <TableColumn fx:id="orgUsernameColumn" prefWidth="75.0" text="Username" />
+          <TableColumn fx:id="orgPasswordColumn" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="orgFirstNameColumn" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="orgLastNameColumn" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="orgEmailColumn" prefWidth="146.39996337890625" text="E-mail" />
+        </columns>
+      </TableView>
+      <TextField fx:id="username" layoutY="274.0" prefHeight="26.0" prefWidth="118.0" promptText="Username" />
+      <TextField fx:id="password" layoutX="118.0" layoutY="274.0" prefHeight="26.0" prefWidth="135.0" promptText="Password" />
+      <TextField fx:id="firstName" layoutX="253.0" layoutY="274.0" prefHeight="26.0" prefWidth="118.0" promptText="First Name" />
+      <TextField fx:id="lastName" layoutX="371.0" layoutY="274.0" prefHeight="26.0" prefWidth="135.0" promptText="Last Name" />
+      <TextField fx:id="email" layoutX="506.0" layoutY="274.0" promptText="E-mail" />
+      <TableView fx:id="dises" layoutX="448.0" layoutY="47.0" prefHeight="206.0" prefWidth="448.0">
+         <columns>
+            <TableColumn fx:id="disUsernameColumn" prefWidth="75.0" text="Username" />
+            <TableColumn fx:id="disPasswordColumn" prefWidth="75.0" text="Password" />
+            <TableColumn fx:id="disFirstNameColumn" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="disLastNameColumn" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="disEmailColumn" prefWidth="146.39996337890625" text="E-mail" />
+         </columns>
+      </TableView>
+      <Label layoutX="149.0" layoutY="14.0" prefHeight="18.0" prefWidth="89.0" text="Organizers" />
+      <Label layoutX="641.0" layoutY="14.0" text="Distributors" />
+      <Label fx:id="orgError" layoutX="37.0" layoutY="399.0" prefHeight="18.0" prefWidth="265.0" text="Organizer username/email exists or has null field" textFill="RED" visible="false" />
+      <Label fx:id="disError" layoutX="37.0" layoutY="428.0" prefHeight="18.0" prefWidth="292.0" text="Distributor username/password exists or has null field" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
