@@ -34,12 +34,12 @@ public class Distributors implements java.io.Serializable {
 	@ManyToMany(cascade = { CascadeType.ALL })
     @JoinTable(
         name = "event_distributors", 
-        joinColumns = { @JoinColumn(name = "dis_id") }, 
-        inverseJoinColumns = { @JoinColumn(name = "ev_id") }
+        joinColumns = { @JoinColumn(name = "dis_id_fk", referencedColumnName="dis_id") }, 
+        inverseJoinColumns = { @JoinColumn(name = "ev_id_fk", referencedColumnName="ev_id") }
     )
 	private Set<Events> DisEvents = new HashSet<Events>();//eventite,svurzani s tozi distributor
 	
-	@OneToMany(mappedBy="distributors",cascade=CascadeType.ALL)
+	@OneToMany(mappedBy="distributors",cascade=CascadeType.ALL,fetch=FetchType.EAGER)
 	private Set<Transactions> transactionses = new HashSet<Transactions>();
 
 	public Distributors() {

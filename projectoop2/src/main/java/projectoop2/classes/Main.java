@@ -10,6 +10,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -21,14 +22,7 @@ import org.hibernate.cfg.Configuration;
 public class Main extends Application{
 
 	public static void main(String[] args) {
-		/*EvType tip=new EvType();
-		tip.setEvtypeDesc("Party");
-		SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory();
-		Session session=sessionFactory.openSession();
-		session.beginTransaction();
-		session.save(tip);
-		session.getTransaction().commit();
-		session.close();*/
+
 
 		launch(args);
 	}
@@ -39,6 +33,12 @@ public class Main extends Application{
 		primaryStage.initStyle(StageStyle.UNIFIED);
 		Scene scene=new Scene(root);
 		primaryStage.setScene(scene);
+		primaryStage.setTitle("Ticket Center");
+		Image image=new Image("icons/project_logo.png");
+		primaryStage.getIcons().add(image);
+		primaryStage.setResizable(false);
+		
+		
 		primaryStage.show();
 	}
 	
@@ -52,24 +52,5 @@ public class Main extends Application{
 	}
 	
 	
-	/*public static void addEvType(String desc) {
-		
-		try {
-			SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory();
-		Session session=sessionFactory.openSession();
-		session.beginTransaction();
-		session.save(tip);
-		session.getTransaction().commit();
-		}
-		catch(Exception ex) {
-			if(session.getTransaction()!=null) {
-				session.rollback();
-			}
-			
-		}
-		finally {
-			session.close();
-		}
-		
-	}*/
+
 }

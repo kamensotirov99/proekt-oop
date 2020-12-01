@@ -29,10 +29,10 @@ public class Organizers implements java.io.Serializable {
 	@ManyToMany(cascade = { CascadeType.ALL })
     @JoinTable(
         name = "event_organizers", 
-        joinColumns = { @JoinColumn(name = "org_id") }, 
-        inverseJoinColumns = { @JoinColumn(name = "ev_id") }
+        joinColumns =  @JoinColumn(name = "org_id_fk", referencedColumnName="org_id") , 
+        inverseJoinColumns =  @JoinColumn(name = "ev_id_fk", referencedColumnName="ev_id") 
     )
-	private Set<Events> OrgEvents = new HashSet<>();
+	private Set<Events> OrgEvents = new HashSet<Events>();
 
 	public Organizers() {
 	}

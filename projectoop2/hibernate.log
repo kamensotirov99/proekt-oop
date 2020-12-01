@@ -1,0 +1,1876 @@
+2020-Dec-01 12:08:26 PM [JavaFX Application Thread] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-Dec-01 12:08:27 PM [JavaFX Application Thread] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-Dec-01 12:08:27 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:08:27 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:08:27 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:08:27 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:08:27 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:08:27 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] WARN  org.hibernate.orm.deprecation - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        this_.org_id as org_id1_4_0_,
+        this_.org_email as org_emai2_4_0_,
+        this_.org_fname as org_fnam3_4_0_,
+        this_.org_lname as org_lnam4_4_0_,
+        this_.org_password as org_pass5_4_0_,
+        this_.org_username as org_user6_4_0_ 
+    from
+        organizers this_ 
+    where
+        this_.org_username=? 
+        and this_.org_password=?
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        distributo0_.dis_id as dis_id1_0_,
+        distributo0_.dis_email as dis_emai2_0_,
+        distributo0_.dis_fname as dis_fnam3_0_,
+        distributo0_.dis_lname as dis_lnam4_0_,
+        distributo0_.dis_password as dis_pass5_0_,
+        distributo0_.dis_rating as dis_rati6_0_,
+        distributo0_.dis_username as dis_user7_0_ 
+    from
+        distributors distributo0_
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:08:28 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.org_id as org_id1_4_0_,
+        organizers0_.org_email as org_emai2_4_0_,
+        organizers0_.org_fname as org_fnam3_4_0_,
+        organizers0_.org_lname as org_lnam4_4_0_,
+        organizers0_.org_password as org_pass5_4_0_,
+        organizers0_.org_username as org_user6_4_0_ 
+    from
+        organizers organizers0_ 
+    where
+        organizers0_.org_id=?
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        orgevents0_.org_id_fk as org_id_f1_2_0_,
+        orgevents0_.ev_id_fk as ev_id_fk2_2_0_,
+        events1_.ev_id as ev_id1_3_1_,
+        events1_.ev_curr_seats as ev_curr_2_3_1_,
+        events1_.ev_date as ev_date3_3_1_,
+        events1_.ev_location as ev_locat4_3_1_,
+        events1_.ev_max_restriction as ev_max_r5_3_1_,
+        events1_.ev_name as ev_name6_3_1_,
+        events1_.ev_seatcount as ev_seatc7_3_1_,
+        events1_.ev_status as ev_statu8_3_1_,
+        events1_.ev_ticketprice as ev_ticke9_3_1_,
+        events1_.ev_type as ev_type10_3_1_ 
+    from
+        event_organizers orgevents0_ 
+    inner join
+        events events1_ 
+            on orgevents0_.ev_id_fk=events1_.ev_id 
+    where
+        orgevents0_.org_id_fk=?
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:08:29 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.org_id as org_id1_4_0_,
+        organizers0_.org_email as org_emai2_4_0_,
+        organizers0_.org_fname as org_fnam3_4_0_,
+        organizers0_.org_lname as org_lnam4_4_0_,
+        organizers0_.org_password as org_pass5_4_0_,
+        organizers0_.org_username as org_user6_4_0_ 
+    from
+        organizers organizers0_ 
+    where
+        organizers0_.org_id=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        orgevents0_.org_id_fk as org_id_f1_2_0_,
+        orgevents0_.ev_id_fk as ev_id_fk2_2_0_,
+        events1_.ev_id as ev_id1_3_1_,
+        events1_.ev_curr_seats as ev_curr_2_3_1_,
+        events1_.ev_date as ev_date3_3_1_,
+        events1_.ev_location as ev_locat4_3_1_,
+        events1_.ev_max_restriction as ev_max_r5_3_1_,
+        events1_.ev_name as ev_name6_3_1_,
+        events1_.ev_seatcount as ev_seatc7_3_1_,
+        events1_.ev_status as ev_statu8_3_1_,
+        events1_.ev_ticketprice as ev_ticke9_3_1_,
+        events1_.ev_type as ev_type10_3_1_ 
+    from
+        event_organizers orgevents0_ 
+    inner join
+        events events1_ 
+            on orgevents0_.ev_id_fk=events1_.ev_id 
+    where
+        orgevents0_.org_id_fk=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        disevents0_.dis_id_fk as dis_id_f1_1_0_,
+        disevents0_.ev_id_fk as ev_id_fk2_1_0_,
+        events1_.ev_id as ev_id1_3_1_,
+        events1_.ev_curr_seats as ev_curr_2_3_1_,
+        events1_.ev_date as ev_date3_3_1_,
+        events1_.ev_location as ev_locat4_3_1_,
+        events1_.ev_max_restriction as ev_max_r5_3_1_,
+        events1_.ev_name as ev_name6_3_1_,
+        events1_.ev_seatcount as ev_seatc7_3_1_,
+        events1_.ev_status as ev_statu8_3_1_,
+        events1_.ev_ticketprice as ev_ticke9_3_1_,
+        events1_.ev_type as ev_type10_3_1_ 
+    from
+        event_distributors disevents0_ 
+    inner join
+        events events1_ 
+            on disevents0_.ev_id_fk=events1_.ev_id 
+    where
+        disevents0_.dis_id_fk=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        disevents0_.dis_id_fk as dis_id_f1_1_0_,
+        disevents0_.ev_id_fk as ev_id_fk2_1_0_,
+        events1_.ev_id as ev_id1_3_1_,
+        events1_.ev_curr_seats as ev_curr_2_3_1_,
+        events1_.ev_date as ev_date3_3_1_,
+        events1_.ev_location as ev_locat4_3_1_,
+        events1_.ev_max_restriction as ev_max_r5_3_1_,
+        events1_.ev_name as ev_name6_3_1_,
+        events1_.ev_seatcount as ev_seatc7_3_1_,
+        events1_.ev_status as ev_statu8_3_1_,
+        events1_.ev_ticketprice as ev_ticke9_3_1_,
+        events1_.ev_type as ev_type10_3_1_ 
+    from
+        event_distributors disevents0_ 
+    inner join
+        events events1_ 
+            on disevents0_.ev_id_fk=events1_.ev_id 
+    where
+        disevents0_.dis_id_fk=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        disevents0_.dis_id_fk as dis_id_f1_1_0_,
+        disevents0_.ev_id_fk as ev_id_fk2_1_0_,
+        events1_.ev_id as ev_id1_3_1_,
+        events1_.ev_curr_seats as ev_curr_2_3_1_,
+        events1_.ev_date as ev_date3_3_1_,
+        events1_.ev_location as ev_locat4_3_1_,
+        events1_.ev_max_restriction as ev_max_r5_3_1_,
+        events1_.ev_name as ev_name6_3_1_,
+        events1_.ev_seatcount as ev_seatc7_3_1_,
+        events1_.ev_status as ev_statu8_3_1_,
+        events1_.ev_ticketprice as ev_ticke9_3_1_,
+        events1_.ev_type as ev_type10_3_1_ 
+    from
+        event_distributors disevents0_ 
+    inner join
+        events events1_ 
+            on disevents0_.ev_id_fk=events1_.ev_id 
+    where
+        disevents0_.dis_id_fk=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        distributo0_.dis_id as dis_id1_0_0_,
+        distributo0_.dis_email as dis_emai2_0_0_,
+        distributo0_.dis_fname as dis_fnam3_0_0_,
+        distributo0_.dis_lname as dis_lnam4_0_0_,
+        distributo0_.dis_password as dis_pass5_0_0_,
+        distributo0_.dis_rating as dis_rati6_0_0_,
+        distributo0_.dis_username as dis_user7_0_0_,
+        transactio1_.dis_id as dis_id5_5_1_,
+        transactio1_.tr_id as tr_id1_5_1_,
+        transactio1_.tr_id as tr_id1_5_2_,
+        transactio1_.dis_id as dis_id5_5_2_,
+        transactio1_.ev_id as ev_id6_5_2_,
+        transactio1_.ticket_tr_count as ticket_t2_5_2_,
+        transactio1_.tr_buyer_fname as tr_buyer3_5_2_,
+        transactio1_.tr_buyer_lname as tr_buyer4_5_2_,
+        events2_.ev_id as ev_id1_3_3_,
+        events2_.ev_curr_seats as ev_curr_2_3_3_,
+        events2_.ev_date as ev_date3_3_3_,
+        events2_.ev_location as ev_locat4_3_3_,
+        events2_.ev_max_restriction as ev_max_r5_3_3_,
+        events2_.ev_name as ev_name6_3_3_,
+        events2_.ev_seatcount as ev_seatc7_3_3_,
+        events2_.ev_status as ev_statu8_3_3_,
+        events2_.ev_ticketprice as ev_ticke9_3_3_,
+        events2_.ev_type as ev_type10_3_3_ 
+    from
+        distributors distributo0_ 
+    left outer join
+        transactions transactio1_ 
+            on distributo0_.dis_id=transactio1_.dis_id 
+    left outer join
+        events events2_ 
+            on transactio1_.ev_id=events2_.ev_id 
+    where
+        distributo0_.dis_id=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:09:55 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.org_id as org_id1_4_0_,
+        organizers0_.org_email as org_emai2_4_0_,
+        organizers0_.org_fname as org_fnam3_4_0_,
+        organizers0_.org_lname as org_lnam4_4_0_,
+        organizers0_.org_password as org_pass5_4_0_,
+        organizers0_.org_username as org_user6_4_0_ 
+    from
+        organizers organizers0_ 
+    where
+        organizers0_.org_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        orgevents0_.org_id_fk as org_id_f1_2_0_,
+        orgevents0_.ev_id_fk as ev_id_fk2_2_0_,
+        events1_.ev_id as ev_id1_3_1_,
+        events1_.ev_curr_seats as ev_curr_2_3_1_,
+        events1_.ev_date as ev_date3_3_1_,
+        events1_.ev_location as ev_locat4_3_1_,
+        events1_.ev_max_restriction as ev_max_r5_3_1_,
+        events1_.ev_name as ev_name6_3_1_,
+        events1_.ev_seatcount as ev_seatc7_3_1_,
+        events1_.ev_status as ev_statu8_3_1_,
+        events1_.ev_ticketprice as ev_ticke9_3_1_,
+        events1_.ev_type as ev_type10_3_1_ 
+    from
+        event_organizers orgevents0_ 
+    inner join
+        events events1_ 
+            on orgevents0_.ev_id_fk=events1_.ev_id 
+    where
+        orgevents0_.org_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        events
+        (ev_curr_seats, ev_date, ev_location, ev_max_restriction, ev_name, ev_seatcount, ev_status, ev_ticketprice, ev_type) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        event_organizers
+        (org_id_fk, ev_id_fk) 
+    values
+        (?, ?)
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        distributo0_.dis_id as dis_id1_0_0_,
+        distributo0_.dis_email as dis_emai2_0_0_,
+        distributo0_.dis_fname as dis_fnam3_0_0_,
+        distributo0_.dis_lname as dis_lnam4_0_0_,
+        distributo0_.dis_password as dis_pass5_0_0_,
+        distributo0_.dis_rating as dis_rati6_0_0_,
+        distributo0_.dis_username as dis_user7_0_0_,
+        transactio1_.dis_id as dis_id5_5_1_,
+        transactio1_.tr_id as tr_id1_5_1_,
+        transactio1_.tr_id as tr_id1_5_2_,
+        transactio1_.dis_id as dis_id5_5_2_,
+        transactio1_.ev_id as ev_id6_5_2_,
+        transactio1_.ticket_tr_count as ticket_t2_5_2_,
+        transactio1_.tr_buyer_fname as tr_buyer3_5_2_,
+        transactio1_.tr_buyer_lname as tr_buyer4_5_2_,
+        events2_.ev_id as ev_id1_3_3_,
+        events2_.ev_curr_seats as ev_curr_2_3_3_,
+        events2_.ev_date as ev_date3_3_3_,
+        events2_.ev_location as ev_locat4_3_3_,
+        events2_.ev_max_restriction as ev_max_r5_3_3_,
+        events2_.ev_name as ev_name6_3_3_,
+        events2_.ev_seatcount as ev_seatc7_3_3_,
+        events2_.ev_status as ev_statu8_3_3_,
+        events2_.ev_ticketprice as ev_ticke9_3_3_,
+        events2_.ev_type as ev_type10_3_3_ 
+    from
+        distributors distributo0_ 
+    left outer join
+        transactions transactio1_ 
+            on distributo0_.dis_id=transactio1_.dis_id 
+    left outer join
+        events events2_ 
+            on transactio1_.ev_id=events2_.ev_id 
+    where
+        distributo0_.dis_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        events0_.ev_id as ev_id1_3_0_,
+        events0_.ev_curr_seats as ev_curr_2_3_0_,
+        events0_.ev_date as ev_date3_3_0_,
+        events0_.ev_location as ev_locat4_3_0_,
+        events0_.ev_max_restriction as ev_max_r5_3_0_,
+        events0_.ev_name as ev_name6_3_0_,
+        events0_.ev_seatcount as ev_seatc7_3_0_,
+        events0_.ev_status as ev_statu8_3_0_,
+        events0_.ev_ticketprice as ev_ticke9_3_0_,
+        events0_.ev_type as ev_type10_3_0_,
+        organizers1_.ev_id_fk as ev_id_fk2_2_1_,
+        organizers2_.org_id as org_id_f1_2_1_,
+        organizers2_.org_id as org_id1_4_2_,
+        organizers2_.org_email as org_emai2_4_2_,
+        organizers2_.org_fname as org_fnam3_4_2_,
+        organizers2_.org_lname as org_lnam4_4_2_,
+        organizers2_.org_password as org_pass5_4_2_,
+        organizers2_.org_username as org_user6_4_2_,
+        transactio3_.ev_id as ev_id6_5_3_,
+        transactio3_.tr_id as tr_id1_5_3_,
+        transactio3_.tr_id as tr_id1_5_4_,
+        transactio3_.dis_id as dis_id5_5_4_,
+        transactio3_.ev_id as ev_id6_5_4_,
+        transactio3_.ticket_tr_count as ticket_t2_5_4_,
+        transactio3_.tr_buyer_fname as tr_buyer3_5_4_,
+        transactio3_.tr_buyer_lname as tr_buyer4_5_4_,
+        distributo4_.dis_id as dis_id1_0_5_,
+        distributo4_.dis_email as dis_emai2_0_5_,
+        distributo4_.dis_fname as dis_fnam3_0_5_,
+        distributo4_.dis_lname as dis_lnam4_0_5_,
+        distributo4_.dis_password as dis_pass5_0_5_,
+        distributo4_.dis_rating as dis_rati6_0_5_,
+        distributo4_.dis_username as dis_user7_0_5_ 
+    from
+        events events0_ 
+    left outer join
+        event_organizers organizers1_ 
+            on events0_.ev_id=organizers1_.ev_id_fk 
+    left outer join
+        organizers organizers2_ 
+            on organizers1_.org_id_fk=organizers2_.org_id 
+    left outer join
+        transactions transactio3_ 
+            on events0_.ev_id=transactio3_.ev_id 
+    left outer join
+        distributors distributo4_ 
+            on transactio3_.dis_id=distributo4_.dis_id 
+    where
+        events0_.ev_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        disevents0_.dis_id_fk as dis_id_f1_1_0_,
+        disevents0_.ev_id_fk as ev_id_fk2_1_0_,
+        events1_.ev_id as ev_id1_3_1_,
+        events1_.ev_curr_seats as ev_curr_2_3_1_,
+        events1_.ev_date as ev_date3_3_1_,
+        events1_.ev_location as ev_locat4_3_1_,
+        events1_.ev_max_restriction as ev_max_r5_3_1_,
+        events1_.ev_name as ev_name6_3_1_,
+        events1_.ev_seatcount as ev_seatc7_3_1_,
+        events1_.ev_status as ev_statu8_3_1_,
+        events1_.ev_ticketprice as ev_ticke9_3_1_,
+        events1_.ev_type as ev_type10_3_1_ 
+    from
+        event_distributors disevents0_ 
+    inner join
+        events events1_ 
+            on disevents0_.ev_id_fk=events1_.ev_id 
+    where
+        disevents0_.dis_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        distributo0_.ev_id_fk as ev_id_fk2_1_0_,
+        distributo0_.dis_id_fk as dis_id_f1_1_0_,
+        distributo1_.dis_id as dis_id1_0_1_,
+        distributo1_.dis_email as dis_emai2_0_1_,
+        distributo1_.dis_fname as dis_fnam3_0_1_,
+        distributo1_.dis_lname as dis_lnam4_0_1_,
+        distributo1_.dis_password as dis_pass5_0_1_,
+        distributo1_.dis_rating as dis_rati6_0_1_,
+        distributo1_.dis_username as dis_user7_0_1_ 
+    from
+        event_distributors distributo0_ 
+    inner join
+        distributors distributo1_ 
+            on distributo0_.dis_id_fk=distributo1_.dis_id 
+    where
+        distributo0_.ev_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        disevents0_.dis_id_fk as dis_id_f1_1_0_,
+        disevents0_.ev_id_fk as ev_id_fk2_1_0_,
+        events1_.ev_id as ev_id1_3_1_,
+        events1_.ev_curr_seats as ev_curr_2_3_1_,
+        events1_.ev_date as ev_date3_3_1_,
+        events1_.ev_location as ev_locat4_3_1_,
+        events1_.ev_max_restriction as ev_max_r5_3_1_,
+        events1_.ev_name as ev_name6_3_1_,
+        events1_.ev_seatcount as ev_seatc7_3_1_,
+        events1_.ev_status as ev_statu8_3_1_,
+        events1_.ev_ticketprice as ev_ticke9_3_1_,
+        events1_.ev_type as ev_type10_3_1_ 
+    from
+        event_distributors disevents0_ 
+    inner join
+        events events1_ 
+            on disevents0_.ev_id_fk=events1_.ev_id 
+    where
+        disevents0_.dis_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        distributo0_.dis_id as dis_id1_0_0_,
+        distributo0_.dis_email as dis_emai2_0_0_,
+        distributo0_.dis_fname as dis_fnam3_0_0_,
+        distributo0_.dis_lname as dis_lnam4_0_0_,
+        distributo0_.dis_password as dis_pass5_0_0_,
+        distributo0_.dis_rating as dis_rati6_0_0_,
+        distributo0_.dis_username as dis_user7_0_0_,
+        transactio1_.dis_id as dis_id5_5_1_,
+        transactio1_.tr_id as tr_id1_5_1_,
+        transactio1_.tr_id as tr_id1_5_2_,
+        transactio1_.dis_id as dis_id5_5_2_,
+        transactio1_.ev_id as ev_id6_5_2_,
+        transactio1_.ticket_tr_count as ticket_t2_5_2_,
+        transactio1_.tr_buyer_fname as tr_buyer3_5_2_,
+        transactio1_.tr_buyer_lname as tr_buyer4_5_2_,
+        events2_.ev_id as ev_id1_3_3_,
+        events2_.ev_curr_seats as ev_curr_2_3_3_,
+        events2_.ev_date as ev_date3_3_3_,
+        events2_.ev_location as ev_locat4_3_3_,
+        events2_.ev_max_restriction as ev_max_r5_3_3_,
+        events2_.ev_name as ev_name6_3_3_,
+        events2_.ev_seatcount as ev_seatc7_3_3_,
+        events2_.ev_status as ev_statu8_3_3_,
+        events2_.ev_ticketprice as ev_ticke9_3_3_,
+        events2_.ev_type as ev_type10_3_3_ 
+    from
+        distributors distributo0_ 
+    left outer join
+        transactions transactio1_ 
+            on distributo0_.dis_id=transactio1_.dis_id 
+    left outer join
+        events events2_ 
+            on transactio1_.ev_id=events2_.ev_id 
+    where
+        distributo0_.dis_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        disevents0_.dis_id_fk as dis_id_f1_1_0_,
+        disevents0_.ev_id_fk as ev_id_fk2_1_0_,
+        events1_.ev_id as ev_id1_3_1_,
+        events1_.ev_curr_seats as ev_curr_2_3_1_,
+        events1_.ev_date as ev_date3_3_1_,
+        events1_.ev_location as ev_locat4_3_1_,
+        events1_.ev_max_restriction as ev_max_r5_3_1_,
+        events1_.ev_name as ev_name6_3_1_,
+        events1_.ev_seatcount as ev_seatc7_3_1_,
+        events1_.ev_status as ev_statu8_3_1_,
+        events1_.ev_ticketprice as ev_ticke9_3_1_,
+        events1_.ev_type as ev_type10_3_1_ 
+    from
+        event_distributors disevents0_ 
+    inner join
+        events events1_ 
+            on disevents0_.ev_id_fk=events1_.ev_id 
+    where
+        disevents0_.dis_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        event_distributors
+        (dis_id_fk, ev_id_fk) 
+    values
+        (?, ?)
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        event_distributors
+        (dis_id_fk, ev_id_fk) 
+    values
+        (?, ?)
+2020-Dec-01 12:10:12 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        event_distributors
+        (dis_id_fk, ev_id_fk) 
+    values
+        (?, ?)
+2020-Dec-01 12:15:58 PM [JavaFX Application Thread] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.23.Final
+2020-Dec-01 12:15:58 PM [JavaFX Application Thread] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-Dec-01 12:15:59 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:15:59 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:15:59 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:15:59 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:15:59 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:15:59 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] WARN  org.hibernate.orm.deprecation - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        this_.org_id as org_id1_4_0_,
+        this_.org_email as org_emai2_4_0_,
+        this_.org_fname as org_fnam3_4_0_,
+        this_.org_lname as org_lnam4_4_0_,
+        this_.org_password as org_pass5_4_0_,
+        this_.org_username as org_user6_4_0_ 
+    from
+        organizers this_ 
+    where
+        this_.org_username=? 
+        and this_.org_password=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        distributo0_.dis_id as dis_id1_0_,
+        distributo0_.dis_email as dis_emai2_0_,
+        distributo0_.dis_fname as dis_fnam3_0_,
+        distributo0_.dis_lname as dis_lnam4_0_,
+        distributo0_.dis_password as dis_pass5_0_,
+        distributo0_.dis_rating as dis_rati6_0_,
+        distributo0_.dis_username as dis_user7_0_ 
+    from
+        distributors distributo0_
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/ticketcenter]
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=****, user=root}
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.org_id as org_id1_4_0_,
+        organizers0_.org_email as org_emai2_4_0_,
+        organizers0_.org_fname as org_fnam3_4_0_,
+        organizers0_.org_lname as org_lnam4_4_0_,
+        organizers0_.org_password as org_pass5_4_0_,
+        organizers0_.org_username as org_user6_4_0_ 
+    from
+        organizers organizers0_ 
+    where
+        organizers0_.org_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        orgevents0_.org_id_fk as org_id_f1_2_0_,
+        orgevents0_.ev_id_fk as ev_id_fk2_2_0_,
+        events1_.ev_id as ev_id1_3_1_,
+        events1_.ev_curr_seats as ev_curr_2_3_1_,
+        events1_.ev_date as ev_date3_3_1_,
+        events1_.ev_location as ev_locat4_3_1_,
+        events1_.ev_max_restriction as ev_max_r5_3_1_,
+        events1_.ev_name as ev_name6_3_1_,
+        events1_.ev_seatcount as ev_seatc7_3_1_,
+        events1_.ev_status as ev_statu8_3_1_,
+        events1_.ev_ticketprice as ev_ticke9_3_1_,
+        events1_.ev_type as ev_type10_3_1_ 
+    from
+        event_organizers orgevents0_ 
+    inner join
+        events events1_ 
+            on orgevents0_.ev_id_fk=events1_.ev_id 
+    where
+        orgevents0_.org_id_fk=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.ev_id as ev_id6_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        distributo1_.dis_id as dis_id1_0_2_,
+        distributo1_.dis_email as dis_emai2_0_2_,
+        distributo1_.dis_fname as dis_fnam3_0_2_,
+        distributo1_.dis_lname as dis_lnam4_0_2_,
+        distributo1_.dis_password as dis_pass5_0_2_,
+        distributo1_.dis_rating as dis_rati6_0_2_,
+        distributo1_.dis_username as dis_user7_0_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        distributors distributo1_ 
+            on transactio0_.dis_id=distributo1_.dis_id 
+    where
+        transactio0_.ev_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        transactio0_.dis_id as dis_id5_5_0_,
+        transactio0_.tr_id as tr_id1_5_0_,
+        transactio0_.tr_id as tr_id1_5_1_,
+        transactio0_.dis_id as dis_id5_5_1_,
+        transactio0_.ev_id as ev_id6_5_1_,
+        transactio0_.ticket_tr_count as ticket_t2_5_1_,
+        transactio0_.tr_buyer_fname as tr_buyer3_5_1_,
+        transactio0_.tr_buyer_lname as tr_buyer4_5_1_,
+        events1_.ev_id as ev_id1_3_2_,
+        events1_.ev_curr_seats as ev_curr_2_3_2_,
+        events1_.ev_date as ev_date3_3_2_,
+        events1_.ev_location as ev_locat4_3_2_,
+        events1_.ev_max_restriction as ev_max_r5_3_2_,
+        events1_.ev_name as ev_name6_3_2_,
+        events1_.ev_seatcount as ev_seatc7_3_2_,
+        events1_.ev_status as ev_statu8_3_2_,
+        events1_.ev_ticketprice as ev_ticke9_3_2_,
+        events1_.ev_type as ev_type10_3_2_ 
+    from
+        transactions transactio0_ 
+    inner join
+        events events1_ 
+            on transactio0_.ev_id=events1_.ev_id 
+    where
+        transactio0_.dis_id=?
+2020-Dec-01 12:16:00 PM [JavaFX Application Thread] DEBUG org.hibernate.SQL - 
+    select
+        organizers0_.ev_id_fk as ev_id_fk2_2_0_,
+        organizers0_.org_id_fk as org_id_f1_2_0_,
+        organizers1_.org_id as org_id1_4_1_,
+        organizers1_.org_email as org_emai2_4_1_,
+        organizers1_.org_fname as org_fnam3_4_1_,
+        organizers1_.org_lname as org_lnam4_4_1_,
+        organizers1_.org_password as org_pass5_4_1_,
+        organizers1_.org_username as org_user6_4_1_ 
+    from
+        event_organizers organizers0_ 
+    inner join
+        organizers organizers1_ 
+            on organizers0_.org_id_fk=organizers1_.org_id 
+    where
+        organizers0_.ev_id_fk=?

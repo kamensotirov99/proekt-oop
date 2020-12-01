@@ -77,12 +77,13 @@ public class LoginController implements Initializable {
 					Parent root=(Parent)disViewLoader.load();
 					Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
 					stage.setScene(new Scene(root));
-					stage.show();
 					Distributors dis=distributors.get(0);
 					disViewController controller=disViewLoader.getController();
 					controller.setCurr_dis(dis);
 					controller.setWelcomeLabel(controller.getCurr_dis().getDisFname());
-					
+					controller.MyEventsList();
+					controller.MyTransactionsList();
+					stage.show();
 				} catch (IOException e) {
 					e.printStackTrace();
 				}
@@ -98,10 +99,11 @@ public class LoginController implements Initializable {
 				stage.setScene(new Scene(root));
 				stage.show();
 				
-				Organizers org=organizers.get(0);
+				//Organizers org=organizers.get(0);
 				organizerViewController controller=orgViewLoader.getController();
-				controller.setCurr_org(org);
+				controller.setCurr_org(organizers.get(0));
 				controller.setWelcomeLabel(controller.getCurr_org().getOrgFname());
+				controller.MyEventsList();
 				
 			} catch (IOException e) {
 				e.printStackTrace();

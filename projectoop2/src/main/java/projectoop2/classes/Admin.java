@@ -1,8 +1,10 @@
 package projectoop2.classes;
 
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 import javax.persistence.NoResultException;
@@ -22,14 +24,23 @@ import com.jfoenix.controls.JFXButton;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 public class Admin implements Initializable {
 @FXML TableView<Organizers> orgs;
@@ -39,7 +50,6 @@ public class Admin implements Initializable {
 @FXML TextField firstName;
 @FXML TextField lastName;
 @FXML TextField email;
-@FXML private JFXButton createOrg;
 @FXML Label orgError;
 @FXML Label disError;
 @FXML TableColumn<Organizers,String> orgUsernameColumn;
@@ -205,6 +215,26 @@ public List<Distributors> findAllDistributors() {
     return allQuery.getResultList();    
 }
 
+public void logOutButtonPressed(ActionEvent event) {
+	Alert alert = new Alert(AlertType.CONFIRMATION);
+	alert.setTitle("Log out Confirmation");
+	alert.setContentText("Are sure you wish to exit?");
 
+	Optional<ButtonType> result = alert.showAndWait();
+	if (result.get() == ButtonType.OK){
+		FXMLLoader loginViewLoader=new FXMLLoader(getClass().getResource("sample.fxml"));
+		try {
+			
+			Parent root=(Parent)loginViewLoader.load();
+			Stage stage=(Stage)((Node)event.getSource()).getScene().getWindow();
+			stage.setScene(new Scene(root));
+			stage.show();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	} else {
+
+	}
+}
 
 }

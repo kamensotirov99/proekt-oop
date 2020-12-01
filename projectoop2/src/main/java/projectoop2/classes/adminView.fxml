@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="896.0" style="-fx-background-color: #ccb3ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectoop2.classes.Admin">
    <children>
-      <JFXButton fx:id="createOrg" layoutX="37.0" layoutY="326.0" onAction="#createOrganizer" prefHeight="59.0" prefWidth="112.0" style="-fx-background-color: #9966ff;" text="Create Organizer" />
+      <JFXButton layoutX="37.0" layoutY="326.0" onAction="#createOrganizer" prefHeight="59.0" prefWidth="112.0" style="-fx-background-color: #9966ff;" text="Create Organizer" />
       <JFXButton layoutX="179.0" layoutY="326.0" onAction="#createDistributor" prefHeight="59.0" prefWidth="112.0" style="-fx-background-color: #9966ff;" text="Create Distributor" />
       <TableView fx:id="orgs" layoutY="47.0" prefHeight="206.0" prefWidth="448.0">
         <columns>
@@ -38,5 +38,6 @@
       <Label layoutX="641.0" layoutY="14.0" text="Distributors" />
       <Label fx:id="orgError" layoutX="37.0" layoutY="399.0" prefHeight="18.0" prefWidth="265.0" text="Organizer username/email exists or has null field" textFill="RED" visible="false" />
       <Label fx:id="disError" layoutX="37.0" layoutY="428.0" prefHeight="18.0" prefWidth="292.0" text="Distributor username/password exists or has null field" textFill="RED" visible="false" />
+      <JFXButton layoutX="37.0" layoutY="458.0" onAction="#logOutButtonPressed" prefHeight="46.0" prefWidth="98.0" style="-fx-background-color: #9966ff;" text="Log out" />
    </children>
 </AnchorPane>

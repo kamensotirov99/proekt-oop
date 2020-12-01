@@ -1,5 +1,6 @@
 package projectoop2.classes;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.HashSet;
@@ -15,22 +16,21 @@ public class Events implements java.io.Serializable {
 	@Column(name="ev_id")
 	private Integer evId;
 	
-	@ManyToOne(optional=false)
-	@JoinColumn(name="evtype_id",referencedColumnName="evtype_id")
-	private EvType evType;
+	@Column(name="ev_type",length=45,nullable=false)
+	private String evType;
 	
 	@Column(name="ev_location",length=45,nullable=false)
 	private String evLocation;
 	
 	@Column(name="ev_date",nullable=false)
-	@Temporal(TemporalType.DATE)
-	private Date evDate;
+	
+	private LocalDate evDate;
 	
 	@Column(name="ev_name",length=45,nullable=false)
 	private String evName;
 	
-	@Column(name="ev_status",nullable=false)
-	private byte evStatus;
+	@Column(name="ev_status",length=45,nullable=false)
+	private String evStatus;
 	
 	@Column(name="ev_seatcount",nullable=false)
 	private int evSeatcount;
@@ -39,25 +39,25 @@ public class Events implements java.io.Serializable {
 	private int evCurrSeats;
 	
 	@Column(name="ev_ticketprice",nullable=false)
-	private float evTicketprice;
+	private double evTicketprice;
 	
 	@Column(name="ev_max_restriction")
 	private int evMaxRestriction;//max broi bileti,koito mogat da budat zakupeni ot kupuvach
 	
 	@ManyToMany(mappedBy = "DisEvents")
-	private Set<Distributors >distributorses = new HashSet<>();
+	private Set<Distributors >distributorses = new HashSet<Distributors>();
 	
-	@OneToMany(mappedBy="events")
-	private Set<Transactions> transactionses = new HashSet<>();
+	@OneToMany(mappedBy="events",fetch=FetchType.EAGER)
+	private Set<Transactions> transactionses = new HashSet<Transactions>();
 	
-	@ManyToMany(mappedBy = "OrgEvents")
-	private Set<Organizers> organizerses = new HashSet<>();
+	@ManyToMany(mappedBy = "OrgEvents",fetch=FetchType.EAGER)
+	private Set<Organizers> organizerses = new HashSet<Organizers>();
 
 	public Events() {
 	}
 
-	public Events(EvType evType, String evLocation, Date evDate, String evName, byte evStatus, int evSeatcount,
-			 float evTicketprice, int evMaxRestriction) {
+	public Events(String evType, String evLocation, LocalDate evDate, String evName, String evStatus, int evSeatcount,
+			 double evTicketprice, int evMaxRestriction) {
 		this.evType = evType;
 		this.evLocation = evLocation;
 		this.evDate = evDate;
@@ -69,8 +69,8 @@ public class Events implements java.io.Serializable {
 		this.evMaxRestriction = evMaxRestriction;
 	}
 
-	public Events(EvType evType, String evLocation, Date evDate, String evName, byte evStatus, int evSeatcount,
-			int evCurrSeats, float evTicketprice, int evMaxRestriction, Set<Distributors> distributorses, Set<Transactions> transactionses,
+	public Events(String evType, String evLocation, LocalDate evDate, String evName, String evStatus, int evSeatcount,
+			int evCurrSeats, double evTicketprice, int evMaxRestriction, Set<Distributors> distributorses, Set<Transactions> transactionses,
 			Set<Organizers> organizerses) {
 		this.evType = evType;
 		this.evLocation = evLocation;
@@ -94,11 +94,11 @@ public class Events implements java.io.Serializable {
 		this.evId = evId;
 	}
 
-	public EvType getEvType() {
+	public String getEvType() {
 		return this.evType;
 	}
 
-	public void setEvType(EvType evType) {
+	public void setEvType(String evType) {
 		this.evType = evType;
 	}
 
@@ -110,11 +110,11 @@ public class Events implements java.io.Serializable {
 		this.evLocation = evLocation;
 	}
 
-	public Date getEvDate() {
+	public LocalDate getEvDate() {
 		return this.evDate;
 	}
 
-	public void setEvDate(Date evDate) {
+	public void setEvDate(LocalDate evDate) {
 		this.evDate = evDate;
 	}
 
@@ -126,11 +126,11 @@ public class Events implements java.io.Serializable {
 		this.evName = evName;
 	}
 
-	public byte getEvStatus() {
+	public String getEvStatus() {
 		return this.evStatus;
 	}
 
-	public void setEvStatus(byte evStatus) {
+	public void setEvStatus(String evStatus) {
 		this.evStatus = evStatus;
 	}
 
@@ -150,11 +150,11 @@ public class Events implements java.io.Serializable {
 		this.evCurrSeats = evCurrSeats;
 	}
 
-	public float getEvTicketprice() {
+	public double getEvTicketprice() {
 		return this.evTicketprice;
 	}
 
-	public void setEvTicketprice(float evTicketprice) {
+	public void setEvTicketprice(double evTicketprice) {
 		this.evTicketprice = evTicketprice;
 	}
 

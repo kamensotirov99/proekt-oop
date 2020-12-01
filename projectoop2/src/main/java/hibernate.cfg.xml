@@ -13,7 +13,6 @@
         <property name="format_sql">true</property>
         <mapping class="projectoop2.classes.Distributors"/>
         <mapping class="projectoop2.classes.Events"/>
-        <mapping class="projectoop2.classes.EvType"/>
         <mapping class="projectoop2.classes.Organizers"/>
         <mapping class="projectoop2.classes.Transactions"/>
     </session-factory>
