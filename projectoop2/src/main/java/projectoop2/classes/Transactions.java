@@ -18,7 +18,7 @@ public class Transactions implements java.io.Serializable {
 	
 	@ManyToOne
     @JoinColumn(name="ev_id", nullable=false)
-	private Events events;
+	public Events events;
 	
 	@Column(name="tr_buyer_fname",length=45,nullable=false)
 	private String trBuyerFname;
@@ -59,6 +59,10 @@ public class Transactions implements java.io.Serializable {
 
 	public Events getEvents() {
 		return this.events;
+	}
+	
+	public String getevName() {
+		return this.getEvents().getEvName();
 	}
 
 	public void setEvents(Events events) {

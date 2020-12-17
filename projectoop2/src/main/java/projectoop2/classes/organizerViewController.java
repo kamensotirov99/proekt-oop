@@ -2,6 +2,7 @@ package projectoop2.classes;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
@@ -38,6 +39,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
@@ -45,6 +47,12 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.StringConverter;
+import javafx.util.converter.DateStringConverter;
+import javafx.util.converter.DoubleStringConverter;
+import javafx.util.converter.FloatStringConverter;
+import javafx.util.converter.IntegerStringConverter;
+import javafx.util.converter.LocalDateStringConverter;
 
 public class organizerViewController implements Initializable{
 
@@ -55,7 +63,7 @@ public Organizers curr_org;
 @FXML TableView<Events> events;
 @FXML TableColumn<Events,String>evType;
 @FXML TableColumn<Events,String>evLocation;
-@FXML TableColumn<Events,Date>evDate;
+@FXML TableColumn<Events,LocalDate>evDate;
 @FXML TableColumn<Events,String>evName;
 @FXML TableColumn<Events,String>evStatus;
 @FXML TableColumn<Events,Integer>evSeatCount;
@@ -94,9 +102,15 @@ evId.setCellValueFactory(new PropertyValueFactory<>("evId"));
 
 events.setEditable(true);
 
-//evLocation.setCellFactory(TextFieldTableCell.forTableColumn());
-
-
+evLocation.setCellFactory(TextFieldTableCell.forTableColumn());
+evType.setCellFactory(TextFieldTableCell.forTableColumn());
+evName.setCellFactory(TextFieldTableCell.forTableColumn());
+evStatus.setCellFactory(TextFieldTableCell.forTableColumn());
+evSeatCount.setCellFactory(TextFieldTableCell.forTableColumn(new IntegerStringConverter()));
+evDate.setCellFactory(TextFieldTableCell.forTableColumn(new LocalDateStringConverter()));
+evCurrSeats.setCellFactory(TextFieldTableCell.forTableColumn(new IntegerStringConverter()));
+evMaxTickets.setCellFactory(TextFieldTableCell.forTableColumn(new IntegerStringConverter()));
+evTicketPrice.setCellFactory(TextFieldTableCell.forTableColumn(new DoubleStringConverter()));
 
 evTypeChoiceBox.getItems().add("Sports");
 evTypeChoiceBox.getItems().add("Music");
@@ -191,14 +205,146 @@ public void createEvents() {
 	}session2.getTransaction().commit();
 	session2.close();
 	
+	evTypeChoiceBox.setValue(null);
+	evStatusChoiceBox.setValue(null);
+	evLocationField.setText(null);
+	evTicketPriceField.setText(null);
+	evNameField.setText(null);
+	evSeatCountField.setText(null);
+	evMaxTicketsField.setText(null);
+	evDatePicker.setValue(null);
+	
 	}
 }
 
 
-public void EditEvent() {
-	Events event=events.getSelectionModel().getSelectedItem();
+
+public void EditEventLocation(CellEditEvent editCell) {
 	Session session=Main.getCurrentSessionfromConfig();
-	event=session.find(Events.class, event.getEvId());
+	Events event=events.getSelectionModel().getSelectedItem();
+	event=session.find(Events.class,event.getEvId());
+	event.setEvLocation(editCell.getNewValue().toString());
+	session.getSessionFactory().openSession();
+	session.getSession();
+	session.beginTransaction();
+	session.saveOrUpdate(event);
+	session.getTransaction().commit();
+	session.close();
+	events.setItems(getEvents());
+}
+
+public void EditEventType(CellEditEvent editCell) {
+	Session session=Main.getCurrentSessionfromConfig();
+	Events event=events.getSelectionModel().getSelectedItem();
+	event=session.find(Events.class,event.getEvId());
+	event.setEvType(editCell.getNewValue().toString());
+	session.getSessionFactory().openSession();
+	session.getSession();
+	session.beginTransaction();
+	session.saveOrUpdate(event);
+	session.getTransaction().commit();
+	session.close();
+	events.setItems(getEvents());
+}
+
+public void EditEventDate(CellEditEvent editCell) {
+	Session session=Main.getCurrentSessionfromConfig();
+	Events event=events.getSelectionModel().getSelectedItem();
+	event=session.find(Events.class,event.getEvId());
+	event.setEvDate(LocalDate.parse(editCell.getNewValue().toString()));
+	session.getSessionFactory().openSession();
+	session.getSession();
+	session.beginTransaction();
+	session.saveOrUpdate(event);
+	session.getTransaction().commit();
+	session.close();
+	events.setItems(getEvents());
+}
+
+public void EditEventName(CellEditEvent editCell) {
+	Session session=Main.getCurrentSessionfromConfig();
+	Events event=events.getSelectionModel().getSelectedItem();
+	event=session.find(Events.class,event.getEvId());
+	event.setEvName(editCell.getNewValue().toString());
+	session.getSessionFactory().openSession();
+	session.getSession();
+	session.beginTransaction();
+	session.saveOrUpdate(event);
+	session.getTransaction().commit();
+	session.close();
+	events.setItems(getEvents());
+}
+
+public void EditEventStatus(CellEditEvent editCell) {
+	Session session=Main.getCurrentSessionfromConfig();
+	Events event=events.getSelectionModel().getSelectedItem();
+	event=session.find(Events.class,event.getEvId());
+	event.setEvStatus(editCell.getNewValue().toString());
+	session.getSessionFactory().openSession();
+	session.getSession();
+	session.beginTransaction();
+	session.saveOrUpdate(event);
+	session.getTransaction().commit();
+	session.close();
+	events.setItems(getEvents());
+}
+
+
+public void EditEventTicketPrice(CellEditEvent editCell) {
+	Session session=Main.getCurrentSessionfromConfig();
+	Events event=events.getSelectionModel().getSelectedItem();
+	event=session.find(Events.class,event.getEvId());
+	event.setEvTicketprice(Double.parseDouble(editCell.getNewValue().toString()));
+	session.getSessionFactory().openSession();
+	session.getSession();
+	session.beginTransaction();
+	session.saveOrUpdate(event);
+	session.getTransaction().commit();
+	session.close();
+	events.setItems(getEvents());
+}
+
+
+public void EditEventSeatCount(CellEditEvent editCell) {
+	Session session=Main.getCurrentSessionfromConfig();
+	Events event=events.getSelectionModel().getSelectedItem();
+	event=session.find(Events.class,event.getEvId());
+	event.setEvSeatcount(Integer.parseInt(editCell.getNewValue().toString()));
+	session.getSessionFactory().openSession();
+	session.getSession();
+	session.beginTransaction();
+	session.saveOrUpdate(event);
+	session.getTransaction().commit();
+	session.close();
+	events.setItems(getEvents());
+}
+
+public void EditEventCurrentSeats(CellEditEvent editCell) {
+	Session session=Main.getCurrentSessionfromConfig();
+	Events event=events.getSelectionModel().getSelectedItem();
+	event=session.find(Events.class,event.getEvId());
+	event.setEvCurrSeats(Integer.parseInt(editCell.getNewValue().toString()));
+	session.getSessionFactory().openSession();
+	session.getSession();
+	session.beginTransaction();
+	session.saveOrUpdate(event);
+	session.getTransaction().commit();
+	session.close();
+	events.setItems(getEvents());
+}
+
+public void EditEventMaxTickets(CellEditEvent editCell) {
+	Session session=Main.getCurrentSessionfromConfig();
+	Events event=events.getSelectionModel().getSelectedItem();
+	event=session.find(Events.class,event.getEvId());
+	event.setEvMaxRestriction(Integer.parseInt(editCell.getNewValue().toString()));
+	session.getSessionFactory().openSession();
+	session.getSession();
+	session.beginTransaction();
+	session.saveOrUpdate(event);
+	session.getTransaction().commit();
+	session.close();
+	events.setItems(getEvents());
 }
 
 public void AssignEvent() {
@@ -273,7 +419,7 @@ public void MyProfile(ActionEvent event) {
 
 public void MyEventsList() {
 	curr_org=Main.getCurrentSessionfromConfig().find(Organizers.class, curr_org.getOrgId());
-	events.getItems().addAll(curr_org.getOrgEvents());
+	events.setItems(getEvents());
 	if(events.getItems().isEmpty()) {
 		Alert alert = new Alert(AlertType.WARNING);
 		alert.setTitle("My Events");

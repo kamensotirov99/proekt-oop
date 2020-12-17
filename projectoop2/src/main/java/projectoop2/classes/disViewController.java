@@ -14,6 +14,7 @@ import org.hibernate.Session;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -30,6 +31,8 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
+
+
 
 
 public class disViewController implements Initializable {
@@ -205,6 +208,7 @@ public class disViewController implements Initializable {
 	public void MyTransactionsList() {
 		curr_dis=Main.getCurrentSessionfromConfig().find(Distributors.class,curr_dis.getDisId());
 		transactions.getItems().addAll(curr_dis.getTransactionses());
+		
 	}
 	public void setWelcomeLabel(String string) {
 		

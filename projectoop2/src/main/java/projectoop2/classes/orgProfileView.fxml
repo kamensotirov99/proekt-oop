@@ -3,63 +3,71 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="366.0" style="-fx-background-color: #9933ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectoop2.classes.orgProfileController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="494.0" style="-fx-background-color: #9933ff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectoop2.classes.orgProfileController">
    <children>
-      <Label alignment="CENTER" layoutX="34.0" layoutY="225.0" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Events">
-         <font>
-            <Font name="Bookman Old Style" size="14.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="34.0" layoutY="183.0" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Last Name">
-         <font>
-            <Font name="Bookman Old Style" size="14.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="34.0" layoutY="137.0" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="First Name">
-         <font>
-            <Font name="Bookman Old Style" size="14.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="34.0" layoutY="94.0" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Password">
-         <font>
-            <Font name="Bookman Old Style" size="14.0" />
-         </font>
-      </Label>
-      <Label alignment="CENTER" layoutX="34.0" layoutY="47.0" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Username">
-         <font>
-            <Font name="Bookman Old Style" size="14.0" />
-         </font>
-      </Label>
-      <JFXButton layoutX="25.0" layoutY="305.0" onAction="#BackButtonPressed" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: #d9b3ff;" text="Back">
+      <JFXButton layoutX="22.0" layoutY="22.0" onAction="#BackButtonPressed" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: #d9b3ff;" text="Back">
          <font>
             <Font name="Bookman Old Style" size="18.0" />
          </font>
       </JFXButton>
-      <Label fx:id="UserNameLabel" layoutX="175.0" layoutY="52.0" prefHeight="18.0" prefWidth="105.0" text="Label" textFill="WHITE">
+      <Pane layoutX="-1.0" layoutY="259.0" prefHeight="360.0" prefWidth="494.0" style="-fx-background-color: #bb99ff;">
+         <children>
+            <Label alignment="CENTER" layoutY="1.0" prefHeight="120.0" prefWidth="173.0" style="-fx-background-color: #d9b3ff;" text="Username">
+               <font>
+                  <Font name="Bookman Old Style" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="120.0" prefHeight="120.0" prefWidth="173.0" style="-fx-background-color: #d9b3ff;" text="Password">
+               <font>
+                  <Font name="Bookman Old Style" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="240.0" prefHeight="120.0" prefWidth="173.0" style="-fx-background-color: #d9b3ff;" text="Events">
+               <font>
+                  <Font name="Bookman Old Style" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="EventCountLabel" alignment="CENTER" layoutX="228.0" layoutY="289.0" prefHeight="18.0" prefWidth="105.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <Line endX="72.0" layoutX="101.0" layoutY="120.0" startX="-100.0" />
+            <Line endX="72.0" layoutX="100.0" layoutY="239.0" startX="-100.0" />
+            <Line endX="-100.99998474121094" endY="358.0" layoutX="274.0" layoutY="2.0" startX="-100.0" />
+            <Line endX="393.39996337890625" endY="-1.0" layoutX="101.0" layoutY="1.0" startX="-100.0" />
+            <Line endX="71.0" layoutX="285.0" layoutY="67.0" startX="-81.0" stroke="#694444" />
+            <Line endX="71.0" layoutX="284.0" layoutY="201.0" startX="-81.0" stroke="#694444" />
+            <Line endX="71.0" layoutX="285.0" layoutY="321.0" startX="-81.0" stroke="#694444" />
+            <Label fx:id="UserNameLabel" alignment="CENTER" layoutX="228.0" layoutY="33.0" prefHeight="18.0" prefWidth="105.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="PasswordLabel" alignment="CENTER" layoutX="228.0" layoutY="170.0" prefHeight="18.0" prefWidth="105.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="179.0" layoutY="152.0" prefHeight="42.0" prefWidth="126.0" text="Organizer" textFill="#cfc4c4">
          <font>
-            <Font name="Bookman Old Style" size="18.0" />
+            <Font name="Arial" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="LastNameLabel" layoutX="175.0" layoutY="187.0" prefHeight="18.0" prefWidth="105.0" text="Label" textFill="WHITE">
+      <Label fx:id="FirstNameLabel" alignment="CENTER" layoutX="130.0" layoutY="75.0" prefHeight="18.0" prefWidth="105.0" text="Label" textFill="WHITE">
          <font>
-            <Font name="Bookman Old Style" size="18.0" />
+            <Font name="Bookman Old Style" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="FirstNameLabel" layoutX="175.0" layoutY="141.0" prefHeight="18.0" prefWidth="105.0" text="Label" textFill="WHITE">
+      <Label fx:id="LastNameLabel" alignment="CENTER" layoutX="247.0" layoutY="75.0" prefHeight="18.0" prefWidth="105.0" text="Label" textFill="WHITE">
          <font>
-            <Font name="Bookman Old Style" size="18.0" />
-         </font>
-      </Label>
-      <Label fx:id="PasswordLabel" layoutX="175.0" layoutY="98.0" prefHeight="18.0" prefWidth="105.0" text="Label" textFill="WHITE">
-         <font>
-            <Font name="Bookman Old Style" size="18.0" />
-         </font>
-      </Label>
-      <Label fx:id="EventCountLabel" layoutX="175.0" layoutY="229.0" prefHeight="18.0" prefWidth="105.0" text="Label" textFill="WHITE">
-         <font>
-            <Font name="Bookman Old Style" size="18.0" />
+            <Font name="Bookman Old Style" size="24.0" />
          </font>
       </Label>
    </children>

@@ -108,7 +108,7 @@ public void createOrganizer() {
 
 public void createDistributor() {
 	if(username.getText().isBlank()||password.getText().isBlank()||firstName.getText().isBlank()||lastName.getText().isBlank()||email.getText().isBlank()) {
-		orgError.setVisible(true);
+		disError.setVisible(true);
 	}else 
 	
 	{

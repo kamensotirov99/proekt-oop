@@ -17,29 +17,28 @@
          <font>
             <Font name="System Bold" size="17.0" />
          </font></Label>
-      <JFXButton fx:id="CreateEventButton" layoutX="125.0" layoutY="402.0" onAction="#createEvents" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Add Event" />
-      <JFXButton layoutX="14.0" layoutY="402.0" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Edit Event" />
-      <JFXButton layoutX="237.0" layoutY="402.0" onAction="#MyProfile" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="My Profile" />
-      <JFXButton layoutX="14.0" layoutY="466.0" onAction="#logOutButtonPressed" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Log out" />
+      <JFXButton fx:id="CreateEventButton" layoutX="20.0" layoutY="402.0" onAction="#createEvents" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Add Event" />
+      <JFXButton layoutX="20.0" layoutY="460.0" onAction="#MyProfile" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="My Profile" />
+      <JFXButton layoutX="20.0" layoutY="590.0" onAction="#logOutButtonPressed" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Log out" />
       <TableView fx:id="events" layoutX="14.0" layoutY="57.0" prefHeight="199.0" prefWidth="814.0">
         <columns>
-          <TableColumn fx:id="evType" prefWidth="78.39999198913574" text="Type" />
-          <TableColumn fx:id="evLocation" prefWidth="71.9999771118164" text="Location" />
-            <TableColumn fx:id="evDate" prefWidth="75.0" text="Date" />
-            <TableColumn fx:id="evName" prefWidth="75.0" text="Name" />
-            <TableColumn fx:id="evStatus" prefWidth="75.0" text="Status" />
-            <TableColumn fx:id="evSeatCount" prefWidth="75.0" text="Seat Count" />
-            <TableColumn fx:id="evCurrSeats" prefWidth="83.19992065429688" text="Current Seats" />
-            <TableColumn fx:id="evTicketPrice" prefWidth="77.5999755859375" text="Ticket Price" />
-            <TableColumn fx:id="evMaxTickets" prefWidth="125.59995117187498" text="Max Buyable Tickets" />
+          <TableColumn fx:id="evType" onEditCommit="#EditEventType" prefWidth="78.39999198913574" text="Type" />
+          <TableColumn fx:id="evLocation" onEditCommit="#EditEventLocation" prefWidth="71.9999771118164" text="Location" />
+            <TableColumn fx:id="evDate" onEditCommit="#EditEventDate" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="evName" onEditCommit="#EditEventName" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="evStatus" onEditCommit="#EditEventStatus" prefWidth="75.0" text="Status" />
+            <TableColumn fx:id="evSeatCount" onEditCommit="#EditEventSeatCount" prefWidth="75.0" text="Seat Count" />
+            <TableColumn fx:id="evCurrSeats" onEditCommit="#EditEventCurrentSeats" prefWidth="83.19992065429688" text="Current Seats" />
+            <TableColumn fx:id="evTicketPrice" onEditCommit="#EditEventTicketPrice" prefWidth="77.5999755859375" text="Ticket Price" />
+            <TableColumn fx:id="evMaxTickets" onEditCommit="#EditEventMaxTickets" prefWidth="125.59995117187498" text="Max Buyable Tickets" />
             <TableColumn fx:id="evId" prefWidth="75.0" text="Id" />
         </columns>
       </TableView>
-      <JFXTextField fx:id="evNameField" alignment="CENTER" layoutX="179.0" layoutY="322.0" prefHeight="28.0" prefWidth="130.0" promptText="Event Name" style="-fx-background-color: #ffffff;" />
-      <JFXTextField fx:id="evLocationField" alignment="CENTER" layoutX="20.0" layoutY="322.0" prefHeight="28.0" prefWidth="130.0" promptText="Location" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="evNameField" alignment="CENTER" layoutX="179.0" layoutY="335.0" prefHeight="28.0" prefWidth="130.0" promptText="Event Name" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="evLocationField" alignment="CENTER" layoutX="20.0" layoutY="336.0" prefHeight="28.0" prefWidth="130.0" promptText="Location" style="-fx-background-color: #ffffff;" />
       <JFXTextField fx:id="evTicketPriceField" alignment="CENTER" layoutX="496.0" layoutY="280.0" onKeyTyped="#ticketPriceCheck" prefHeight="26.0" prefWidth="130.0" promptText="Ticket Price" style="-fx-background-color: #ffffff;" />
-      <JFXTextField fx:id="evSeatCountField" alignment="CENTER" layoutX="337.0" layoutY="322.0" onKeyTyped="#seatCountCheck" prefHeight="28.0" prefWidth="130.0" promptText="Seat Count" style="-fx-background-color: #ffffff;" />
-      <JFXTextField fx:id="evMaxTicketsField" alignment="CENTER" layoutX="496.0" layoutY="323.0" onKeyTyped="#maxTicketsCheck" prefHeight="26.0" prefWidth="130.0" promptText="Max Tickets" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="evSeatCountField" alignment="CENTER" layoutX="337.0" layoutY="336.0" onKeyTyped="#seatCountCheck" prefHeight="28.0" prefWidth="130.0" promptText="Seat Count" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="evMaxTicketsField" alignment="CENTER" layoutX="496.0" layoutY="337.0" onKeyTyped="#maxTicketsCheck" prefHeight="26.0" prefWidth="130.0" promptText="Max Tickets" style="-fx-background-color: #ffffff;" />
       <DatePicker fx:id="evDatePicker" layoutX="179.0" layoutY="280.0" prefHeight="26.0" prefWidth="130.0" promptText="           Date" />
       <ChoiceBox fx:id="evTypeChoiceBox" layoutX="20.0" layoutY="280.0" prefHeight="26.0" prefWidth="130.0" />
       <ChoiceBox fx:id="evStatusChoiceBox" layoutX="337.0" layoutY="280.0" prefHeight="26.0" prefWidth="130.0" />
@@ -47,6 +46,6 @@
       <Label layoutX="373.0" layoutY="262.0" text="Event Status" textFill="#fafafa" />
       <ListView fx:id="distributorListView" layoutX="642.0" layoutY="280.0" prefHeight="200.0" prefWidth="200.0" />
       <Label layoutX="711.0" layoutY="262.0" text="Distributors" textFill="WHITE" />
-      <JFXButton layoutX="350.0" layoutY="401.0" onAction="#AssignEvent" prefHeight="28.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Assign Event" />
+      <JFXButton layoutX="20.0" layoutY="515.0" onAction="#AssignEvent" prefHeight="28.0" prefWidth="87.0" style="-fx-background-color: #d9b3ff;" text="Assign Event" />
    </children>
 </AnchorPane>
