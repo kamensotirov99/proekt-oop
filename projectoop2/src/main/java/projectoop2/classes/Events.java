@@ -47,10 +47,10 @@ public class Events implements java.io.Serializable {
 	@ManyToMany(mappedBy = "DisEvents")
 	private Set<Distributors >distributorses = new HashSet<Distributors>();
 	
-	@OneToMany(mappedBy="events",fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="events",fetch=FetchType.LAZY)
 	private Set<Transactions> transactionses = new HashSet<Transactions>();
 	
-	@ManyToMany(mappedBy = "OrgEvents",fetch=FetchType.EAGER)
+	@ManyToMany(mappedBy = "OrgEvents",fetch=FetchType.LAZY)
 	private Set<Organizers> organizerses = new HashSet<Organizers>();
 
 	public Events() {

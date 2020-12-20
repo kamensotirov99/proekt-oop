@@ -33,6 +33,8 @@ public class Organizers implements java.io.Serializable {
         inverseJoinColumns =  @JoinColumn(name = "ev_id_fk", referencedColumnName="ev_id") 
     )
 	private Set<Events> OrgEvents = new HashSet<Events>();
+	
+	
 
 	public Organizers() {
 	}

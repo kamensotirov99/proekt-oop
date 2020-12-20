@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
+import org.controlsfx.control.Notifications;
 import org.hibernate.Session;
 
 import com.jfoenix.controls.JFXButton;
@@ -19,6 +20,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -31,6 +33,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 
 
@@ -204,6 +207,18 @@ public class disViewController implements Initializable {
 		curr_dis=Main.getCurrentSessionfromConfig().find(Distributors.class, curr_dis.getDisId());
 		events.getItems().addAll(curr_dis.getDisEvents());
 	}
+	
+	public void unsoldTickets() {
+		for(Events event : curr_dis.getDisEvents()){
+			  if((event.getEvCurrSeats()==event.getEvSeatcount())&&event.getEvStatus().equals("Not yet held")) {
+				  Notifications notification=Notifications.create().title("Unsold event").
+						  text(event.getEvName()+" has 0 sold tickets").hideAfter(Duration.seconds(5)).position(Pos.TOP_LEFT);
+				  notification.darkStyle();
+				  notification.showInformation();
+			  }
+			}
+	}
+
 	
 	public void MyTransactionsList() {
 		curr_dis=Main.getCurrentSessionfromConfig().find(Distributors.class,curr_dis.getDisId());

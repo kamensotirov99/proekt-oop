@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
-
+import org.controlsfx.control.Notifications;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
@@ -27,6 +27,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -47,6 +48,7 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
 import javafx.util.StringConverter;
 import javafx.util.converter.DateStringConverter;
 import javafx.util.converter.DoubleStringConverter;
@@ -442,6 +444,19 @@ public ObservableList<Events> getEvents(){
      }
 	return eventsList;	
 }
+
+public void unsoldTickets() {
+	for(Events event : curr_org.getOrgEvents()){
+		  if((event.getEvCurrSeats()==event.getEvSeatcount())&&event.getEvStatus().equals("Not yet held")) {
+			  Notifications notification=Notifications.create().title("Unsold event").
+					  text(event.getEvName()+" has 0 sold tickets").hideAfter(Duration.seconds(5)).position(Pos.TOP_LEFT);
+			  notification.darkStyle();
+			  notification.showInformation();
+		  }
+		}
+}
+
+
 
 public List<Distributors> findAllDistributors() {
 	CriteriaBuilder cb = Main.getCurrentSessionfromConfig().getCriteriaBuilder();

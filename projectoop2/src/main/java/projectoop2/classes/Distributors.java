@@ -39,8 +39,10 @@ public class Distributors implements java.io.Serializable {
     )
 	private Set<Events> DisEvents = new HashSet<Events>();//eventite,svurzani s tozi distributor
 	
-	@OneToMany(mappedBy="distributors",cascade=CascadeType.ALL,fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="distributors",cascade=CascadeType.ALL,fetch=FetchType.LAZY)
 	private Set<Transactions> transactionses = new HashSet<Transactions>();
+	
+	
 
 	public Distributors() {
 	}

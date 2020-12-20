@@ -83,6 +83,8 @@ public class LoginController implements Initializable {
 					controller.setWelcomeLabel(controller.getCurr_dis().getDisFname());
 					controller.MyEventsList();
 					controller.MyTransactionsList();
+					controller.unsoldTickets();
+					
 					stage.show();
 				} catch (IOException e) {
 					e.printStackTrace();
@@ -104,6 +106,8 @@ public class LoginController implements Initializable {
 				controller.setCurr_org(organizers.get(0));
 				controller.setWelcomeLabel(controller.getCurr_org().getOrgFname());
 				controller.MyEventsList();
+				controller.unsoldTickets();
+				
 				
 			} catch (IOException e) {
 				e.printStackTrace();
